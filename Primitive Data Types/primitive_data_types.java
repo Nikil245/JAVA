@@ -36,9 +36,9 @@ public class primitive_data_types{
          System.out.println("The maximum value of double:"+doubleMaxValue);
          System.out.println("The minimum value of double:"+doubleMinValue);
 
-         int a = 10;
-         float b = 10.0f;
-         double c = 10.0d;
+     //     int a = 10;
+     //     float b = 10.0f;
+     //     double c = 10.0d;
       
         
 
