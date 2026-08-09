@@ -1,6 +1,35 @@
 public class LinkedList {
     Node head;
 
+    void insertAt(int data, int position){
+        if(position <1){
+            return;
+        }
+
+        if(position == 1){
+            addfront(data);
+            return;
+        }
+
+        Node newNode = new Node(data);
+
+        Node current = head;
+
+        for(int i=1;i< position-1;i++){
+            if(current == null){
+                return;
+            }
+            current = current.next;
+
+            if (current == null){
+                return;
+            }
+
+            newNode.next = current.next;
+            current.next = newNode;
+        }
+    }
+
     void size(){
         Node current = head;
         int count =0;

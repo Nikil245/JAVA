@@ -14,6 +14,7 @@ public class Main {
         boolean search = list.search(13);
         System.out.println(search);
         list.size();
+        list.insertAt(14,3);
         list.display();
     }
 }
