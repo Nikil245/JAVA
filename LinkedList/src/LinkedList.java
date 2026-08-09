@@ -1,6 +1,34 @@
 public class LinkedList {
     Node head;
 
+
+    void deleteAt(int position){
+        if(position <1 || head == null){
+            return;
+        }
+
+        if(position == 1){
+            head = head.next;
+            return;
+        }
+
+        Node current = head;
+
+        for(int i=1; i < position - 1; i++){
+            if(current.next == null){
+                return;
+            }
+
+            current= current.next;
+
+            if(current.next == null){
+                return;
+            }
+
+        }
+            current.next = current.next.next;
+    }
+
     void insertAt(int data, int position){
         if(position <1){
             return;

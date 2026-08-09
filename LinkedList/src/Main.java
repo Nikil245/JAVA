@@ -15,6 +15,7 @@ public class Main {
         System.out.println(search);
         list.size();
         list.insertAt(14,3);
+        list.deleteAt(4);
         list.display();
     }
 }
