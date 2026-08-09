@@ -2,6 +2,19 @@ public class LinkedList {
     Node head;
 
 
+    void reverse(){
+        Node previous = null;
+        Node current = head;
+
+        while (current !=null){
+            Node next = current.next;
+            current.next=previous;
+            previous=current;
+            current = next;
+        }
+        head = previous;
+    }
+
     void deleteAt(int position){
         if(position <1 || head == null){
             return;

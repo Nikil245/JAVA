@@ -17,5 +17,7 @@ public class Main {
         list.insertAt(14,3);
         list.deleteAt(4);
         list.display();
+        list.reverse();
+        list.display();
     }
 }
